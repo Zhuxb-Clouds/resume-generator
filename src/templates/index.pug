@@ -3,7 +3,6 @@ extends layout
 block header
   section.info
     .info-item.name= info.name
-    .info-item.status= info.status
     .info-item.sub-text
       span.location= info.location
       span.intention= info.intention
@@ -16,9 +15,15 @@ block header
         span.email
           a(href="mailto:" + info.email)= info.email
     .info-item.languages
-      each value in info.languages
-        span.language= value
 block content
+  section.section-item.others
+    .section-header
+      .section-title= "技术能力"
+      .section-headerline
+    .section-content
+      ul.supplements
+        each supplement in others.supplements
+          li.supplement= supplement
   section.section-item.experiences
     .section-header
       .section-title= "工作经历"
@@ -31,14 +36,15 @@ block content
             span.range.sub-text= experience.range
           .section-subitem-subheader.sub-text= experience.position
           .techs-container
-            each tech in experience.techs
-                span.tech= tech
           each project in experience.projects
             .project-section
               .project-name= project.name
+
               ul.project-detail
                 each detail in project.details
                   li.detail= detail
+              each tech in project.techs
+                span.tech= tech
   section.section-item.personal-projects
     .section-header
       .section-title= "个人项目"
@@ -66,14 +72,7 @@ block content
             span.school-name= edu.school
             span.range.sub-text= edu.startTime + " ~ " + edu.endTime
           .section-subitem-subheader.sub-text= edu.education + " - " + edu.major
-  section.section-item.others
-    .section-header
-      .section-title= "自我评价"
-      .section-headerline
-    .section-content
-      ul.supplements
-        each supplement in others.supplements
-          li.supplement= supplement
+
   section.section-item.others
     .section-header
       .section-title= "其他链接"

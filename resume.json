@@ -1,149 +1,89 @@
 {
   "title": "resume-generator",
   "info": {
-    "name": "攻城狮",
-    "status": "目前在职",
-    "location": "上海",
-    "intention": "前端 / 后端 / 全栈开发",
-    "phone": "182****0512",
-    "email": "yourname@gmail.com",
-    "languages": ["JavaScript", "Node.js", "Python", "Java", "React", "Vue"]
+    "name": "朱泽松",
+    "status": "已离职",
+    "location": "厦门",
+    "intention": "全栈工程师",
+    "phone": "152-5993-9539",
+    "email": "ZhuxbClouds@gmail.com"
+  },
+  "others": {
+    "supplements": [
+      "熟练使用 HTML5,CSS3 进行页面布局，熟练掌握 JavaScript,TypeScript 语言，熟练掌握 ES6, 关注 ESNext 新语法。",
+      "熟悉 Vue2/3 相关技术栈，熟悉 Uni-app 开发移动端应用，使用过 React/Next.js 框架。熟悉 iView/Element/Ant Design Vue 主流 ui 框架",
+      "熟练使用 Node.js 脱离浏览器环境进行开发，熟悉 Nest.js,Express.js 等框架，了解 pm2,NGINX,docker 等工具，有服务端部署开发经验。",
+      "熟练使用Git进行版本控制和代码托管，熟悉约定式提交。了解并灵活运用设计模式，懂得代码设计的重要性，遵守代码规范。关注前端发展趋向，对新技术保持热情，敢于学习并尝试新技术。"
+    ],
+    "socialLinks": [
+      {
+        "name": "blog",
+        "icon": "fas fa-globe-americas",
+        "url": "https://Zhuxb.cn/",
+        "text": "个人博客"
+      },
+      {
+        "name": "github",
+        "icon": "fab fa-github",
+        "url": "https://github.com/Zhuxb-Clouds",
+        "text": "Github"
+      }
+    ]
   },
   "experiences": [
     {
-      "company": "公司名称",
-      "range": "2018-05 ~ 至今",
-      "position": "后端开发工程师",
-      "techs": ["Java", "MySQL", "Redis", "Spring Boot"],
-      "projects": [
-        {
-          "name": "项目名称",
-          "url": "",
-          "details": [
-            "这是一段描述",
-            "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述",
-            "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述"
-          ]
-        },
-        {
-          "name": "项目名称",
-          "url": "",
-          "details": [
-            "这是一段描述",
-            "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述"
-          ]
-        },
-        {
-          "name": "项目名称",
-          "url": "",
-          "details": [
-            "这是一段描述",
-            "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述",
-            "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述"
-          ]
-        },
-        {
-          "name": "项目名称",
-          "url": "",
-          "details": [
-            "这是一段描述",
-            "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述"
-          ]
-        }
-      ]
-    },
-    {
-      "company": "公司名称",
-      "range": "2016-06 ~ 2018-05",
+      "company": "武汉光谷信息技术股份有限公司",
+      "range": "2022.06-2023.10",
       "position": "前端开发工程师",
-      "techs": ["React", "Vue.js", "TypeScript", "Node.js"],
       "projects": [
         {
-          "name": "项目名称",
-          "url": "",
+          "name": "疾控中心管理系统",
           "details": [
-            "这是一段描述",
-            "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述",
-            "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述"
-          ]
+            "本项目基于原有的疾控中心管理系统，对其进行了重构，主要负责PC端及移动端的技术选型与开发。",
+            "在AntD-Vue的基础上进行二次封装了一些高复用, 可扩展/维护性好的Hook, 遍布使用于项目中 90% 的功能模块页面内。相较以前整体缩略了约 30% 的代码量, 迭代开发的速度提升了约 1-3 倍。",
+            "本项目在实际业务场景有线下填写问卷部分，通过d3.js实现了可视化配置问卷功能。问卷存在一些较为复杂的校验规则与路径，在移动端实例化问卷并根据用户填写自动生成链表，填写完成后传入远端。在PC端使用pdf-lib.js将问卷以回答的颗粒度绘制在pdf文件上。",
+            "在移动端调用低功耗蓝牙设备，阅读过相关协议。",
+            "使用gzip、静态资源切片等WebpackPlugin优化前端打包，最终产物体积下降60%，访问速度提升80%。"
+          ],
+          "techs": ["Vue3", "Uni-app", "AntDesign-Vue", "d3.js", "pdf-lib.js"]
         },
         {
-          "name": "项目名称",
-          "url": "",
+          "name": "国土资源生态修复管理系统",
           "details": [
-            "这是一段描述",
-            "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述"
-          ]
+            "本项目基于老项目进行新功能模块的开发，通过openlayers.js实现了大屏端可交互多图层地图。",
+            "设计并开发MultiTable业务组件，通过迭代调用实现多级column-head。采用JSON配置化设计，基本上解决了原本多级表格开发过于繁琐的痛点问题。"
+          ],
+          "techs": ["Vue2", "ElementUI", "openlayers.js"]
         },
         {
-          "name": "项目名称",
-          "url": "",
+          "name": "中外运仓库管理系统",
           "details": [
-            "这是一段描述",
-            "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述"
-          ]
+            "本项目中，使用 Nest.js 编写 BFF 层，并承担一部分网关服务。使用 REST Api 规范设计接口，制定前端规范，优化 console 信息显示。",
+            "指导新同事进行功能开发，帮助解决开发中遇到的困难。"
+          ],
+          "techs": ["Node.js", "Nest.js", "sequelize"]
         }
       ]
     }
   ],
   "personalProjects": [
     {
-      "name": "个人项目",
-      "url": "",
+      "name": "个人博客",
+      "url": "zhuxb.cn",
       "details": [
-        "这是一段描述这是一段描述",
-        "这是一段描述这是一段描述"
+        "习惯编写技术文章并分享。",
+        "使用 Next.js 实现的SSG静态网页，并通过GitHub Action实现的CI/CD，在push时build并打包至服务端。服务端使用Nginx进行反向代理、HTTPS配置，并通过cdn加速js、css文件的访问速度。"
       ],
-      "desc": "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述",
-      "techs": ["React", "Python", "Flask", "MySQL"]
-    },
-    {
-      "name": "个人项目",
-      "url": "",
-      "details": [],
-      "desc": "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述",
-      "techs": []
-    },
-    {
-      "name": "个人项目",
-      "url": "",
-      "details": [
-        "这是一段描述这是一段描述",
-        "这是一段描述这是一段描述"
-      ],
-      "desc": "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述",
-      "techs": ["Pug", "Puppeteer", "Gulp", "MySQL"]
+      "techs": ["CI/CD", "Next.js"]
     }
   ],
   "education": [
     {
-      "school": "南京一所大学",
-      "major": "软件工程",
+      "school": "汉口学院",
+      "major": "计算机科学与技术专业",
       "education": "本科",
-      "startTime": "2012-09",
-      "endTime": "2016-06"
+      "startTime": "2018.09",
+      "endTime": "2022.06"
     }
-  ],
-  "others": {
-    "supplements": [
-      "这是一段描述这是一段描述这是一段描述这是一段描述",
-      "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述",
-      "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述",
-      "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述"
-    ],
-    "socialLinks": [
-      {
-        "name": "blog",
-        "icon": "fas fa-globe-americas",
-        "url": "https://somelink",
-        "text": "个人博客"
-      },
-      {
-        "name": "github",
-        "icon": "fab fa-github",
-        "url": "https://somelink",
-        "text": "Github"
-      }
-    ]
-  }
+  ]
 }
