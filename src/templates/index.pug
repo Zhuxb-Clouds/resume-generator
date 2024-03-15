@@ -14,7 +14,6 @@ block header
         i.fas.fa-envelope
         span.email
           a(href="mailto:" + info.email)= info.email
-    .info-item.languages
 block content
   section.section-item.others
     .section-header
@@ -47,12 +46,14 @@ block content
                 span.tech= tech
   section.section-item.personal-projects
     .section-header
-      .section-title= "个人项目"
+      .section-title= "其他项目"
       .section-headerline
     .section-content
       each project in personalProjects
         .project-section
           .project-name= project.name
+          .project-link
+            a(href=project.url target="_blank" rel="noopener noreferrer")= project.url
           .project-desc= project.desc
           if project.details.length
             ul.project-detail
@@ -72,7 +73,6 @@ block content
             span.school-name= edu.school
             span.range.sub-text= edu.startTime + " ~ " + edu.endTime
           .section-subitem-subheader.sub-text= edu.education + " - " + edu.major
-
   section.section-item.others
     .section-header
       .section-title= "其他链接"

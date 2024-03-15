@@ -4,24 +4,18 @@
     "name": "朱泽松",
     "status": "已离职",
     "location": "厦门",
-    "intention": "全栈工程师",
+    "intention": "前端/全栈工程师",
     "phone": "152-5993-9539",
     "email": "ZhuxbClouds@gmail.com"
   },
   "others": {
     "supplements": [
-      "熟练使用 HTML5,CSS3 进行页面布局，熟练掌握 JavaScript,TypeScript 语言，熟练掌握 ES6, 关注 ESNext 新语法。",
-      "熟悉 Vue2/3 相关技术栈，熟悉 Uni-app 开发移动端应用，使用过 React/Next.js 框架。熟悉 iView/Element/Ant Design Vue 主流 ui 框架",
+      "熟练使用 HTML5,CSS3 进行页面布局，熟练掌握 JavaScript,TypeScript 语言，关注 ESNext 新语法。",
+      "熟悉 Vue2/3 相关技术栈，有 Uni-app 开发移动端应用经验，使用过 React/Next.js 框架。熟悉 iView/Element Plus/Ant Design 等主流 ui 框架",
       "熟练使用 Node.js 脱离浏览器环境进行开发，熟悉 Nest.js,Express.js 等框架，了解 pm2,NGINX,docker 等工具，有服务端部署开发经验。",
       "熟练使用Git进行版本控制和代码托管，熟悉约定式提交。了解并灵活运用设计模式，懂得代码设计的重要性，遵守代码规范。关注前端发展趋向，对新技术保持热情，敢于学习并尝试新技术。"
     ],
     "socialLinks": [
-      {
-        "name": "blog",
-        "icon": "fas fa-globe-americas",
-        "url": "https://Zhuxb.cn/",
-        "text": "个人博客"
-      },
       {
         "name": "github",
         "icon": "fab fa-github",
@@ -68,8 +62,18 @@
   ],
   "personalProjects": [
     {
+      "name": "PromptTool词图 AIGC",
+      "url": "http://prompttool.com/my-home",
+      "desc":"基于Stable Diffusion进行AICG应用构建，使用Vue3 + Vite进行开发。",
+      "details": [
+        "独立开发并维护核心画板功能，使用Fabric.js实现多图层、序列化的绘制画板。使用策略模式构建画板操作栈，使其与画板功能解耦。",
+        "维护原有的项目代码，并重构收藏、绘图功能。"
+      ],
+      "techs": ["Vue3", "Vite", "TypeScript", "Fabric.js"]
+    },
+    {
       "name": "个人博客",
-      "url": "zhuxb.cn",
+      "url": "https://zhuxb.dev/",
       "details": [
         "习惯编写技术文章并分享。",
         "使用 Next.js 实现的SSG静态网页，并通过GitHub Action实现的CI/CD，在push时build并打包至服务端。服务端使用Nginx进行反向代理、HTTPS配置，并通过cdn加速js、css文件的访问速度。"
