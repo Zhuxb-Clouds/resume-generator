@@ -62,12 +62,13 @@
   ],
   "personalProjects": [
     {
-      "name": "PromptTool词图 AIGC",
+      "name": "PromptTool词图",
       "url": "http://prompttool.com/my-home",
-      "desc":"基于Stable Diffusion进行AICG应用构建，使用Vue3 + Vite进行开发。",
+      "desc":"基于Stable Diffusion构建的AICG应用，使用Vue3 + Vite进行前端项目开发。",
       "details": [
         "独立开发并维护核心画板功能，使用Fabric.js实现多图层、序列化的绘制画板。使用策略模式构建画板操作栈，使其与画板功能解耦。",
-        "维护原有的项目代码，并重构收藏、绘图功能。"
+        "维护原有的项目代码，并重构收藏、绘图、瀑布流功能。",
+        "对SPA进行简单的SEO优化，使Google正确展示站点信息。"
       ],
       "techs": ["Vue3", "Vite", "TypeScript", "Fabric.js"]
     },
